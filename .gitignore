@@ -1,0 +1,20 @@
+# Never publish local/private state from the release staging directory.
+.env
+.env.*
+*.pem
+*.p12
+*.pfx
+*.key
+*.db
+*.sqlite*
+*.pcap
+*.pcapng
+*.log
+target/
+dist/
+build/
+node_modules/
+src/
+src-tauri/
+server/
+scratch/
