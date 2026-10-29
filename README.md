@@ -7,6 +7,9 @@ The application source, backend implementation, tests, development tooling,
 private data, and build workspace are maintained separately and are not
 distributed from this repository.
 
+Official website: <https://1viz3r0.github.io/netoze-site/> — product overview,
+workflow, compatibility, and verified download steps.
+
 ## Current release
 
 **NET0ZE 2.0.0**
