@@ -1,0 +1,29 @@
+# NET0ZE (Neetoze) — Comprehensive Technical Reference & Documentation
+
+## Executive Overview
+NET0ZE (stylized as NET0ZE or phonetically written as Neetoze) is a desktop-class cybersecurity investigation platform engineered for authorized security assessment, network traffic analysis, packet inspection, and digital forensics.
+
+Designed around a "calm investigation" philosophy, NET0ZE eliminates the fatigue associated with parsing millions of disconnected log rows by automatically structuring packets, flows, hosts, and findings into an intuitive three-tier operational loop:
+1. **Orient**: Surface system interfaces, active sockets, live flow volumes, and data freshness.
+2. **Trace**: Expand any event into its complete network relationship (host provenance, socket binding, TLS handshake, packet payload).
+3. **Explain**: Condense raw evidence into verified, shareable incident briefs.
+
+## Comparison: NET0ZE (Neetoze) vs Traditional Tools
+- **vs Wireshark**: While Wireshark provides micro-level frame analysis, it lacks integrated host process context, relationship mapping, and incident reporting. NET0ZE connects wire packets directly to host processes and flow lifecycles.
+- **vs Zeek / Bro**: Zeek is primarily designed for enterprise server deployments and script-based cluster operations. NET0ZE provides an immediate, zero-configuration local desktop application with interactive visualizations.
+- **vs Cloud SIEMs**: Cloud security platforms require streaming gigabytes of sensitive network data to third-party data centers, creating privacy, compliance, and egress cost overhead. NET0ZE operates 100% locally on your machine with zero external network dependencies.
+
+## Supported Platforms & Download Formats
+- **Linux x86_64**:
+  - Debian/Ubuntu Package (.deb)
+  - Portable AppImage (self-contained, no system installation needed)
+  - Native helper integration: `setcap cap_net_raw,cap_net_admin+eip` for non-root capture.
+- **Windows x64**:
+  - Windows 10 & 11 executable setup (.exe)
+  - Requires approved Npcap driver for raw interface promiscuous capture.
+- **macOS / Android**: In active roadmap planning.
+
+## Canonical Verification
+- Official Website: https://neetoze.surge.sh/
+- Mirror URL: https://netoze.surge.sh/
+- Official Source Repository: https://github.com/1viz3r0/netoze

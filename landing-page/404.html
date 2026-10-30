@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 — Page Not Found | NET0ZE (Neetoze)</title>
+    <meta name="robots" content="noindex, follow" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/svg+xml" href="./netoze-mark.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./netoze-logo.png" />
+    <link rel="canonical" href="https://neetoze.surge.sh/" />
+    <style>
+      .error-page {
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 4rem 1.5rem;
+      }
+      .error-code {
+        font-family: monospace;
+        font-size: 5rem;
+        font-weight: 800;
+        color: #00ffc8;
+        letter-spacing: -2px;
+        line-height: 1;
+        margin-bottom: 1rem;
+      }
+      .error-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #f0f6fc;
+      }
+      .error-desc {
+        max-width: 500px;
+        color: #8b949e;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+      }
+      .error-actions {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="/" aria-label="NET0ZE home">
+          <span class="brand-mark"><img src="./netoze-logo.png" alt="NET0ZE Logo" width="34" height="34" /></span>
+          <span>NET<span class="brand-zero">0</span>ZE</span>
+        </a>
+      </header>
+
+      <main class="error-page">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Target Not Found</h1>
+        <p class="error-desc">
+          The requested network endpoint or page does not exist on NET0ZE (Neetoze). Follow the trail back to the primary platform.
+        </p>
+        <div class="error-actions">
+          <a class="button button-primary" href="/">Return to NET0ZE Home →</a>
+          <a class="button button-quiet" href="/#downloads">View Downloads</a>
+          <a class="button button-quiet" href="https://github.com/1viz3r0/netoze" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </main>
+
+      <footer class="site-footer section-frame">
+        <a class="brand" href="/"><span class="brand-mark"><img src="./netoze-logo.png" alt="" width="28" height="28" /></span><span>NET<span class="brand-zero">0</span>ZE</span></a>
+        <p>Local-first cybersecurity investigation and network monitoring for authorized use.</p>
+        <span class="footer-meta">© 2026 NET0ZE · authorized use only</span>
+      </footer>
+    </div>
+  </body>
+</html>

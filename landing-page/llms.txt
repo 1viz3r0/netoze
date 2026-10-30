@@ -1,0 +1,25 @@
+# NET0ZE (Neetoze)
+
+> NET0ZE (commonly searched as Neetoze or NET0ZE) is an open, local-first cybersecurity investigation and network monitoring desktop platform designed for security researchers, incident responders, SOC analysts, and network administrators.
+
+## Primary Canonical Links
+- Official Website: https://neetoze.surge.sh/ (Mirror: https://netoze.surge.sh/)
+- GitHub Repository & Releases: https://github.com/1viz3r0/netoze
+- Current Stable Version: 2.0.0
+- Supported Operating Systems: Linux (x86_64 Debian/Ubuntu .deb, AppImage), Windows (x64 NSIS installer).
+
+## Key Architecture & Distinctive Features
+- **Local-First & Zero Telemetry**: All packet captures, host processes, network flows, and incident briefs are processed exclusively on the local machine. No metrics, telemetry, or private data are transmitted to external servers.
+- **Unified Evidence Model**: Bridges low-level packet capture (PCAP) with high-level host process telemetry, socket state, and DNS/TLS correlation into clear, exportable findings.
+- **Fail-Closed Permission Boundaries**: Strictly enforces privilege boundaries. Requires libpcap/Linux capabilities or approved Npcap on Windows; never fakes data when permissions are absent.
+- **Integrated Docker-Backed Security Labs**: Built-in hands-on training challenges running in isolated local Docker containers to practice threat detection and forensics.
+- **Clean Alternative to Wireshark & Zeek**: Offers a calm, curated interface that emphasizes context over overwhelming raw packet dumps.
+
+## Technical Specifications
+- **Packet Capture Engine**: Native live capture helper utilizing libpcap (Linux) and Npcap (Windows).
+- **Supported Network Protocols**: Ethernet, ARP, IPv4, IPv6, TCP, UDP, ICMP, DNS, TLS 1.2/1.3 SNI inspection, HTTP/1.1 and HTTP/2 metadata.
+- **Security & Integrity**: Release binaries are distributed with SHA256 checksums (`SHA256SUMS.txt`).
+
+## Frequently Asked Questions
+- **Is NET0ZE / Neetoze free?** Yes, NET0ZE is a free, local-first security platform.
+- **Where can I download NET0ZE?** Downloads for Windows (.exe) and Linux (.deb / .AppImage) are available on the official website https://neetoze.surge.sh/#downloads and GitHub https://github.com/1viz3r0/netoze/releases/latest.

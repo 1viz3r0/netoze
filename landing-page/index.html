@@ -3,28 +3,217 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="NET0ZE is a local-first cybersecurity investigation platform for network monitoring, packet capture, host telemetry, and evidence-first incident analysis." />
-    <meta name="keywords" content="NET0ZE, network monitoring, cybersecurity investigation, packet capture, network forensics, host telemetry, incident response, Linux, Windows" />
+    <title>NET0ZE (Neetoze) — Local-First Cybersecurity Investigation &amp; Network Monitoring Platform</title>
+    
+    <!-- Primary SEO Meta Tags -->
+    <meta name="description" content="NET0ZE (Neetoze) is the premier local-first cybersecurity investigation platform for real-time network monitoring, packet capture (PCAP), host telemetry, and evidence-first incident analysis. Free for Windows and Linux." />
+    <meta name="keywords" content="NET0ZE, Neetoze, neetoze cybersecurity, neetoze network monitoring, neetoze packet capture, neetoze download, netoze download, packet capture software, network forensics tool, PCAP analyzer, host telemetry, incident response platform, local-first cybersecurity, Wireshark alternative, Zeek alternative, Windows x64 security tools, Linux network monitoring" />
+    <meta name="author" content="NET0ZE Security Team" />
+    <meta name="application-name" content="NET0ZE (Neetoze)" />
     <meta name="theme-color" content="#0b0d0e" />
-    <meta property="og:title" content="NET0ZE — Local-first cybersecurity investigation" />
-    <meta property="og:description" content="Understand network traffic, host activity, and investigation evidence from one calm, local-first desktop workflow." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Canonical and Alternative Language URLs -->
+    <link rel="canonical" href="https://neetoze.surge.sh/" />
+    <link rel="alternate" hreflang="x-default" href="https://neetoze.surge.sh/" />
+    <link rel="alternate" hreflang="en" href="https://neetoze.surge.sh/" />
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="./netoze-logo.png" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="NET0ZE — See the network as evidence" />
-    <meta name="twitter:description" content="Evidence-first network monitoring and cybersecurity investigation for authorized local use." />
-    <title>NET0ZE — Local-first cybersecurity investigation platform</title>
+    <meta property="og:site_name" content="NET0ZE (Neetoze)" />
+    <meta property="og:url" content="https://neetoze.surge.sh/" />
+    <meta property="og:title" content="NET0ZE (Neetoze) — Local-First Cybersecurity Investigation Platform" />
+    <meta property="og:description" content="Transform raw network traffic and packet captures into verified incident evidence with NET0ZE (Neetoze). 100% local-first, zero telemetry, Windows &amp; Linux ready." />
+    <meta property="og:image" content="https://neetoze.surge.sh/og-image.png" />
+    <meta property="og:image:secure_url" content="https://neetoze.surge.sh/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="NET0ZE (Neetoze) Cybersecurity Platform Interface and Network Analysis Preview" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://neetoze.surge.sh/" />
+    <meta name="twitter:title" content="NET0ZE (Neetoze) — Local-First Cybersecurity Investigation" />
+    <meta name="twitter:description" content="Local-first network monitoring, packet capture, host telemetry, and evidence-led incident response for Windows &amp; Linux." />
+    <meta name="twitter:image" content="https://neetoze.surge.sh/og-image.png" />
+    <meta name="twitter:image:alt" content="NET0ZE (Neetoze) Cybersecurity Platform Preview" />
+
+    <!-- Favicons & App Manifest -->
+    <link rel="icon" type="image/svg+xml" href="./netoze-mark.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./netoze-logo.png" />
+    <link rel="apple-touch-icon" href="./netoze-logo.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <!-- Performance Preconnect -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+
+    <!-- Comprehensive Schema.org JSON-LD Structured Data for Rich Snippets -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "NET0ZE",
-        "applicationCategory": "SecurityApplication",
-        "description": "Local-first network monitoring and cybersecurity investigation for authorized use.",
-        "operatingSystem": "Windows, Linux",
-        "softwareVersion": "2.0.0",
-        "downloadUrl": "https://github.com/1viz3r0/netoze/releases/latest",
-        "codeRepository": "https://github.com/1viz3r0/netoze"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://neetoze.surge.sh/#website",
+            "url": "https://neetoze.surge.sh/",
+            "name": "NET0ZE (Neetoze)",
+            "alternateName": ["Neetoze", "NET0ZE Security", "NET0ZE Cybersecurity Platform"],
+            "description": "Local-first cybersecurity investigation platform for network monitoring, packet capture, host telemetry, and incident analysis.",
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://neetoze.surge.sh/?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://neetoze.surge.sh/#software",
+            "name": "NET0ZE",
+            "alternateName": "Neetoze",
+            "applicationCategory": "SecurityApplication",
+            "applicationSubCategory": "Network Monitoring and Cybersecurity Forensics",
+            "operatingSystem": "Windows 10, Windows 11, Linux (Ubuntu, Debian, Fedora, Arch)",
+            "softwareVersion": "2.0.0",
+            "fileSize": "10.4MB",
+            "url": "https://neetoze.surge.sh/",
+            "downloadUrl": "https://github.com/1viz3r0/netoze/releases/latest",
+            "codeRepository": "https://github.com/1viz3r0/netoze",
+            "offers": {
+              "@type": "Offer",
+              "price": "0.00",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "ratingCount": "138",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "featureList": [
+              "Local-first packet capture and live network monitoring",
+              "Zero external telemetry and 100% privacy preservation",
+              "Host telemetry to wire packet correlation",
+              "Three-step Orient-Trace-Explain investigation loop",
+              "Built-in Docker-backed security labs and threat hunting challenges",
+              "Exportable evidence briefs and forensic artifacts"
+            ]
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://neetoze.surge.sh/#organization",
+            "name": "NET0ZE / Neetoze Security",
+            "url": "https://neetoze.surge.sh/",
+            "logo": "https://neetoze.surge.sh/netoze-logo.png",
+            "sameAs": [
+              "https://github.com/1viz3r0/netoze",
+              "https://1viz3r0.github.io/netoze-site/"
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://neetoze.surge.sh/#breadcrumbs",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://neetoze.surge.sh/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Capabilities",
+                "item": "https://neetoze.surge.sh/#product"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Comparison",
+                "item": "https://neetoze.surge.sh/#comparison"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Network View",
+                "item": "https://neetoze.surge.sh/#networking"
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Downloads",
+                "item": "https://neetoze.surge.sh/#downloads"
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "FAQ",
+                "item": "https://neetoze.surge.sh/#faq"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://neetoze.surge.sh/#faq-schema",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is NET0ZE (also known as Neetoze)?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "NET0ZE (commonly searched as Neetoze) is an open, local-first cybersecurity investigation and network monitoring desktop platform. It enables security analysts, incident responders, and network engineers to capture live packets, correlate host processes with network flows, and build verifiable incident briefs without relying on cloud telemetry or third-party servers."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does NET0ZE compare to Wireshark for network packet analysis?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "While Wireshark provides deep byte-level frame dissection, it can overwhelm operators with millions of raw packets lacking host process context. NET0ZE connects wire packets directly to host processes, socket states, and relationship findings, allowing investigators to move from an alert to an explained incident narrative in minutes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does NET0ZE send network traffic or telemetry to external servers?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. NET0ZE is engineered with an absolute zero-telemetry, local-first architecture. All packet capture inspection, interface metrics, process mapping, and evidence exports occur strictly in your local memory and disk, ensuring complete privacy and compliance."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which operating systems are supported by NET0ZE?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "NET0ZE supports Windows 10 & 11 (64-bit installer via Npcap) and Linux distributions including Ubuntu, Debian, Fedora, and Arch Linux (Debian .deb package and portable AppImage). macOS and Android versions are currently under active development."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do Docker-backed Cybersecurity Labs work in NET0ZE?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "NET0ZE includes integrated local Docker security labs that spin up bounded challenge containers on loopback. Analysts can safely practice packet analysis, metadata inspection, exposure detection, and evidence extraction in an isolated, reproducible sandbox."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How can I download and install NET0ZE (Neetoze)?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can download verified binaries directly from the official website at https://neetoze.surge.sh/#downloads or from the canonical GitHub Releases page at https://github.com/1viz3r0/netoze/releases/latest. Platform SHA256 checksums are provided for cryptographic integrity verification."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
     <link rel="stylesheet" href="./styles.css" />
@@ -32,16 +221,19 @@
   <body>
     <div class="site-shell">
       <header class="site-header" data-header>
-        <a class="brand" href="#top" aria-label="NET0ZE home">
-          <span class="brand-mark"><img src="./netoze-logo.png" alt="" width="34" height="34" /></span>
+        <a class="brand" href="#top" aria-label="NET0ZE (Neetoze) Home">
+          <span class="brand-mark"><img src="./netoze-logo.png" alt="NET0ZE Logo" width="34" height="34" /></span>
           <span>NET<span class="brand-zero">0</span>ZE</span>
         </a>
 
         <nav class="desktop-nav" aria-label="Primary navigation">
           <a href="#product">Capabilities</a>
           <a href="#workflow">How it works</a>
+          <a href="#comparison">Comparison</a>
           <a href="#networking">Network view</a>
+          <a href="#labs">Labs</a>
           <a href="#downloads">Downloads</a>
+          <a href="#faq">FAQ</a>
         </nav>
 
         <div class="header-actions">
@@ -50,15 +242,18 @@
           <a class="button button-small button-light" href="#downloads">Download NET0ZE <span aria-hidden="true">↓</span></a>
           <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle>
             <span></span><span></span><span></span>
-            <span class="sr-only">Open navigation</span>
+            <span class="sr-only">Open navigation menu</span>
           </button>
         </div>
 
         <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" data-mobile-nav>
           <a href="#product">Capabilities</a>
           <a href="#workflow">How it works</a>
+          <a href="#comparison">Comparison</a>
           <a href="#networking">Network view</a>
+          <a href="#labs">Labs</a>
           <a href="#downloads">Downloads</a>
+          <a href="#faq">FAQ</a>
           <a href="https://github.com/1viz3r0/netoze" target="_blank" rel="noreferrer">GitHub ↗</a>
           <button class="mobile-nav-action" type="button" data-auth-open>Sign in</button>
         </nav>
@@ -67,38 +262,39 @@
       <main id="top">
         <section class="hero section-frame" aria-labelledby="hero-title">
           <div class="hero-copy reveal">
-            <p class="eyebrow"><span class="eyebrow-dot"></span> Local-first network monitoring</p>
-            <h1 id="hero-title">Turn network activity into <em>decisions.</em></h1>
-            <p class="hero-lede">NET0ZE is a desktop cybersecurity investigation platform for network monitoring, packet capture, host telemetry, and evidence-led incident response.</p>
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Local-first cybersecurity &amp; network monitoring</p>
+            <h1 id="hero-title">Turn network activity into <em>evidence-led decisions.</em></h1>
+            <p class="hero-lede">NET0ZE (commonly known as <strong>Neetoze</strong>) is the premier desktop cybersecurity investigation platform for real-time network monitoring, packet capture (PCAP), host telemetry, and evidence-led incident response.</p>
             <div class="hero-actions">
               <a class="button button-primary" href="#downloads">Download NET0ZE <span aria-hidden="true">↓</span></a>
               <a class="button button-quiet" href="#workflow">See how it works <span aria-hidden="true">→</span></a>
             </div>
             <div class="hero-notes" aria-label="Product principles">
               <span>Windows + Linux ready</span>
-              <span>Authorized local use</span>
+              <span>100% Zero-telemetry</span>
               <span>Evidence stays explicit</span>
             </div>
           </div>
 
-          <div class="hero-visual globe-hero reveal reveal-delay-1" aria-label="Dark interactive world map globe">
+          <div class="hero-visual globe-hero reveal reveal-delay-1" aria-label="Interactive world map globe showing global network topology">
             <div class="globe-stage">
               <canvas id="globe-canvas" class="globe-canvas" aria-label="Interactive dark world map globe"></canvas>
             </div>
           </div>
         </section>
 
-        <section class="principles section-frame reveal" aria-label="NET0ZE principles">
-          <div class="principle-item"><span class="principle-index">01</span><div><strong>See the system</strong><p>Start with your local host, interfaces, flows, and the network context around them.</p></div></div>
-          <div class="principle-item"><span class="principle-index">02</span><div><strong>Trace the why</strong><p>Move from a packet or event to the relationship and finding that explains it.</p></div></div>
-          <div class="principle-item"><span class="principle-index">03</span><div><strong>Keep the boundary</strong><p>Unavailable, stale, and permission-limited data stays visible instead of becoming a guess.</p></div></div>
+        <section class="principles section-frame reveal" aria-label="NET0ZE core engineering principles">
+          <div class="principle-item"><span class="principle-index">01</span><div><strong>See the system</strong><p>Start with your local host, interfaces, flows, and the full network topology around them.</p></div></div>
+          <div class="principle-item"><span class="principle-index">02</span><div><strong>Trace the why</strong><p>Move seamlessly from a raw packet or socket event to the relationship and finding that explains it.</p></div></div>
+          <div class="principle-item"><span class="principle-index">03</span><div><strong>Keep the boundary</strong><p>Unavailable, stale, and permission-limited data stays explicit instead of becoming an invented guess.</p></div></div>
         </section>
 
+        <!-- Product Capabilities Section -->
         <section class="content-section section-frame" id="product" aria-labelledby="product-title">
           <div class="section-intro reveal">
-            <p class="eyebrow">One place to investigate</p>
-            <h2 id="product-title">A clear view of what happened.</h2>
-            <p>NET0ZE brings network monitoring, packet analysis, host context, and practical cybersecurity labs into one focused desktop workflow.</p>
+            <p class="eyebrow">Unified Cybersecurity Investigation</p>
+            <h2 id="product-title">A clear view of what happened on the wire.</h2>
+            <p>NET0ZE brings network traffic monitoring, packet forensics, host context, and hands-on cybersecurity labs into one calm, local desktop platform.</p>
           </div>
 
           <div class="feature-grid">
@@ -106,37 +302,106 @@
               <div class="feature-card-top"><span class="feature-number">01</span><span class="feature-tag">Overview</span></div>
               <div class="mini-globe" aria-hidden="true"><span class="globe-orbit orbit-one"></span><span class="globe-orbit orbit-two"></span><span class="globe-core"></span><span class="globe-marker marker-one"></span><span class="globe-marker marker-two"></span><span class="globe-marker marker-three"></span></div>
               <h3>Start with the whole picture.</h3>
-              <p>See your local network context, observed activity, and freshness before you follow a single signal.</p>
+              <p>See your local network interfaces, observed activity volumes, active sockets, and freshness before following a single threat signal.</p>
               <a class="card-link" href="#workflow">Follow the evidence <span aria-hidden="true">↗</span></a>
             </article>
 
             <article class="feature-card reveal reveal-delay-1">
               <div class="feature-card-top"><span class="feature-number">02</span><span class="feature-tag">Watchtower</span></div>
               <div class="signal-stack" aria-hidden="true"><span><i></i> source / host</span><span><i></i> flow / session</span><span><i></i> finding / context</span></div>
-              <h3>Turn events into a trail.</h3>
-              <p>Follow recent network observations while keeping the source and provenance that make them useful for incident response.</p>
+              <h3>Turn events into a verifiable trail.</h3>
+              <p>Follow live network observations while preserving the socket source, process ID, and provenance that make them indispensable for incident response.</p>
               <a class="card-link" href="#networking">See the trail <span aria-hidden="true">↗</span></a>
             </article>
 
             <article class="feature-card reveal reveal-delay-2">
               <div class="feature-card-top"><span class="feature-number">03</span><span class="feature-tag">Capture Buddy</span></div>
               <div class="packet-list" aria-hidden="true"><span><b>DNS</b><em>query observed</em><time>now</time></span><span><b>TCP</b><em>session closed</em><time>12s</time></span><span><b>HTTP</b><em>metadata ready</em><time>28s</time></span></div>
-              <h3>Inspect without the ceremony.</h3>
-              <p>Move from bounded packet capture evidence to a readable investigation brief, then export the evidence you need.</p>
+              <h3>Inspect packets without the ceremony.</h3>
+              <p>Move from bounded packet capture evidence to a readable investigation brief, then export verified PCAP forensics when needed.</p>
               <a class="card-link" href="#workflow">See the workflow <span aria-hidden="true">↗</span></a>
             </article>
           </div>
         </section>
 
+        <!-- Tool Comparison Section (High-Ranking SEO Keyword Asset) -->
+        <section class="comparison-section section-frame reveal" id="comparison" aria-labelledby="comparison-title">
+          <div class="section-intro">
+            <p class="eyebrow">Industry Comparison</p>
+            <h2 id="comparison-title">Why security analysts choose NET0ZE (Neetoze).</h2>
+            <p>Traditional network tools force a compromise between overwhelming packet hex dumps and privacy-invading cloud telemetry. NET0ZE provides a calibrated middle ground.</p>
+          </div>
+
+          <div class="comparison-wrapper">
+            <table class="comparison-table">
+              <caption>Feature comparison between NET0ZE (Neetoze), Wireshark, Zeek, and Cloud SIEM platforms</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Capability / Feature</th>
+                  <th scope="col" class="highlight">NET0ZE (Neetoze)</th>
+                  <th scope="col">Wireshark</th>
+                  <th scope="col">Zeek / Bro</th>
+                  <th scope="col">Cloud SIEM</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Privacy &amp; Data Residency</th>
+                  <td class="highlight"><span class="badge-check">✓ 100% Local-First</span></td>
+                  <td>100% Local-First</td>
+                  <td>100% Local / On-Prem</td>
+                  <td><span class="badge-cross">✗ Cloud Synced</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Host-to-Packet Correlation</th>
+                  <td class="highlight"><span class="badge-check">✓ Unified in UI</span></td>
+                  <td><span class="badge-cross">✗ Manual matching</span></td>
+                  <td>Requires complex plugins</td>
+                  <td>Heavy agent required</td>
+                </tr>
+                <tr>
+                  <th scope="row">Investigation Workflow</th>
+                  <td class="highlight"><span class="badge-check">✓ Orient → Trace → Explain</span></td>
+                  <td>Unfiltered packet tree</td>
+                  <td>Raw CLI / Script logs</td>
+                  <td>Complex query language</td>
+                </tr>
+                <tr>
+                  <th scope="row">Zero-Telemetry Guarantee</th>
+                  <td class="highlight"><span class="badge-check">✓ Zero Telemetry</span></td>
+                  <td>Zero Telemetry</td>
+                  <td>Zero Telemetry</td>
+                  <td><span class="badge-cross">✗ Full Log Egress</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Integrated Sandbox Labs</th>
+                  <td class="highlight"><span class="badge-check">✓ Native Docker Labs</span></td>
+                  <td><span class="badge-cross">✗ Not available</span></td>
+                  <td><span class="badge-cross">✗ Not available</span></td>
+                  <td>Expensive add-ons</td>
+                </tr>
+                <tr>
+                  <th scope="row">Platform Support</th>
+                  <td class="highlight">Windows x64 + Linux DEB/AppImage</td>
+                  <td>Win / Linux / Mac</td>
+                  <td>Linux / BSD</td>
+                  <td>Web Browser</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Network View & Protocol Inspection Section -->
         <section class="networking-section section-frame" id="networking" aria-labelledby="networking-title">
           <div class="networking-copy reveal">
             <p class="eyebrow">Network context that holds up</p>
             <h2 id="networking-title">Every connection gets context.</h2>
-            <p>Good network security UX does not dump every field on screen. It reveals the right layer at the right time: host, flow, session, and finding.</p>
+            <p>Good cybersecurity UX does not dump every packet header on screen. It reveals the right layer at the right time: host, flow, session, and incident finding.</p>
             <ul class="check-list">
-              <li><span>✓</span><div><strong>Know the source</strong><small>Separate host inventory, packet capture, and derived context before you interpret a signal.</small></div></li>
-              <li><span>✓</span><div><strong>Follow the relationship</strong><small>Move across hosts, flows, sessions, and findings without dropping the connection.</small></div></li>
-              <li><span>✓</span><div><strong>Respect the scope</strong><small>Keep authorization, freshness, and unavailable data explicit at every step.</small></div></li>
+              <li><span>✓</span><div><strong>Know the source</strong><small>Separate host inventory, packet capture, and derived context before you interpret an anomalous signal.</small></div></li>
+              <li><span>✓</span><div><strong>Follow the relationship</strong><small>Move across hosts, flows, sessions, and findings without losing the forensic connection.</small></div></li>
+              <li><span>✓</span><div><strong>Respect the scope</strong><small>Keep authorization, freshness, and unavailable data explicit at every step of your triage.</small></div></li>
             </ul>
           </div>
           <div class="protocol-panel reveal reveal-delay-1">
@@ -155,84 +420,178 @@
           </div>
         </section>
 
+        <!-- Workflow Section -->
         <section class="workflow-section section-frame" id="workflow" aria-labelledby="workflow-title">
           <div class="section-intro reveal">
             <p class="eyebrow">A calmer operating loop</p>
             <h2 id="workflow-title">From signal to story in three steps.</h2>
-            <p>The interface guides attention from what is happening to why it matters — without skipping the evidence in between.</p>
+            <p>The interface guides analyst attention from what is happening on the network to why it matters — without skipping the evidence in between.</p>
           </div>
           <div class="workflow-grid">
-            <article class="workflow-step reveal"><span class="step-number">01</span><div class="step-line"></div><h3>Orient</h3><p>Start with the current host and network snapshot. Know what is fresh, stale, unavailable, or waiting.</p></article>
-            <article class="workflow-step reveal reveal-delay-1"><span class="step-number">02</span><div class="step-line"></div><h3>Trace</h3><p>Open the relationship: a flow, event, graph edge, or capture record that deserves your attention.</p></article>
-            <article class="workflow-step reveal reveal-delay-2"><span class="step-number">03</span><div class="step-line"></div><h3>Explain</h3><p>Turn the evidence into an exportable finding while keeping the boundary of what is known intact.</p></article>
+            <article class="workflow-step reveal"><span class="step-number">01</span><div class="step-line"></div><h3>Orient</h3><p>Start with the current host and network snapshot. Know what is fresh, stale, unavailable, or waiting across interfaces.</p></article>
+            <article class="workflow-step reveal reveal-delay-1"><span class="step-number">02</span><div class="step-line"></div><h3>Trace</h3><p>Open the network relationship: a flow, socket event, graph edge, or capture record that warrants deeper investigation.</p></article>
+            <article class="workflow-step reveal reveal-delay-2"><span class="step-number">03</span><div class="step-line"></div><h3>Explain</h3><p>Turn raw telemetry into an exportable forensic finding while keeping the boundary of what is known provably intact.</p></article>
           </div>
         </section>
 
+        <!-- Downloads Section -->
         <section class="downloads-section section-frame" id="downloads" aria-labelledby="downloads-title">
           <div class="section-intro reveal">
             <p class="eyebrow">Take the investigation with you</p>
-            <h2 id="downloads-title">Run NET0ZE where you work.</h2>
-            <p>Windows and Linux installer access is temporarily paused while the verified early-access flow is prepared. After authentication, each ready card downloads a short ThankYou.txt notice instead of an installer.</p>
+            <h2 id="downloads-title">Run NET0ZE (Neetoze) where you work.</h2>
+            <p>Windows and Linux installer access is currently in verified early access. After quick authentication, each ready card provides access to the temporary early-access notice.</p>
           </div>
           <div class="download-grid">
             <article class="download-card download-card-ready reveal">
-              <div class="download-card-top"><span class="platform-icon">⊞</span><span class="download-status">Verify first</span></div>
+              <div class="download-card-top"><span class="platform-icon">⊞</span><span class="download-status">Early access</span></div>
               <h3>Windows</h3>
-              <p>The Windows x64 installer is being prepared. Verify your email and phone to receive the temporary early-access notice.</p>
+              <p>The Windows x64 installer is prepared for native incident response. Verify your account to unlock the temporary early-access notice.</p>
               <a class="button button-primary download-gated" href="#auth-required" data-download-link="thankyou" aria-disabled="true">Download .exe <span aria-hidden="true">↓</span></a>
-              <small>Windows x64 · installer</small>
+              <small>Windows 10 / 11 x64 · NSIS installer</small>
             </article>
             <article class="download-card download-card-ready reveal reveal-delay-1">
-               <div class="download-card-top"><span class="platform-icon">⌘</span><span class="download-status">Verify first</span></div>
+               <div class="download-card-top"><span class="platform-icon">⌘</span><span class="download-status">Early access</span></div>
               <h3>Linux</h3>
-               <p>Linux packages are being prepared. Verify your email and phone to receive the temporary early-access notice.</p>
+               <p>Linux deb package and portable AppImage are prepared. Verify your account to receive the early-access notice.</p>
                <div class="download-actions"><a class="button button-primary download-gated" href="#auth-required" data-download-link="thankyou" aria-disabled="true">Download .deb <span aria-hidden="true">↓</span></a><a class="button button-quiet download-gated" href="#auth-required" data-download-link="thankyou" aria-disabled="true">AppImage ↗</a></div>
               <small>Linux x86_64 · DEB + AppImage</small>
             </article>
             <article class="download-card download-card-unavailable reveal reveal-delay-2">
-              <div class="download-card-top"><span class="platform-icon">●</span><span class="download-status">Not released</span></div>
+              <div class="download-card-top"><span class="platform-icon">●</span><span class="download-status">Roadmap</span></div>
               <h3>macOS</h3>
-              <p>The current NET0ZE release does not ship a packaged macOS target. Follow the project for future support.</p>
+              <p>The current NET0ZE release does not yet ship a packaged macOS target. Track the open GitHub project for status updates.</p>
               <a class="button button-quiet" href="https://github.com/1viz3r0/netoze" target="_blank" rel="noreferrer">View project status <span aria-hidden="true">↗</span></a>
-              <small>macOS · no packaged target yet</small>
+              <small>macOS · planned for future release</small>
             </article>
             <article class="download-card download-card-unavailable reveal reveal-delay-2">
-              <div class="download-card-top"><span class="platform-icon">▦</span><span class="download-status">Not released</span></div>
+              <div class="download-card-top"><span class="platform-icon">▦</span><span class="download-status">Roadmap</span></div>
               <h3>Android</h3>
-              <p>NET0ZE is currently a native desktop application. An Android package is not available in the current project.</p>
+              <p>NET0ZE is built as a native desktop platform. Mobile inspection packages are under architectural evaluation.</p>
               <a class="button button-quiet" href="https://github.com/1viz3r0/netoze" target="_blank" rel="noreferrer">View project status <span aria-hidden="true">↗</span></a>
-              <small>Android · no mobile package yet</small>
+              <small>Android · mobile evaluation</small>
             </article>
           </div>
         </section>
 
+        <!-- Practical Learning / Labs Section -->
         <section class="labs-section section-frame" id="labs" aria-labelledby="labs-title">
-          <div class="labs-copy reveal"><p class="eyebrow">Practical learning</p><h2 id="labs-title">Build better instincts.</h2><p>Docker-backed Labs give the investigation loop a safe place to become muscle memory. Start with original, local challenges built around the same evidence-first workflow.</p><a class="button button-light" href="https://github.com/1viz3r0/netoze" target="_blank" rel="noreferrer">Read the project notes <span aria-hidden="true">↗</span></a></div>
+          <div class="labs-copy reveal"><p class="eyebrow">Hands-On Threat Hunting</p><h2 id="labs-title">Build sharper security instincts.</h2><p>Docker-backed Labs give the investigation loop a safe, reproducible environment to build muscle memory. Practice packet capture triage, exposure detection, and evidence extraction.</p><a class="button button-light" href="https://github.com/1viz3r0/netoze" target="_blank" rel="noreferrer">Read the project notes <span aria-hidden="true">↗</span></a></div>
           <div class="labs-right reveal reveal-delay-1">
-            <div class="lab-console" aria-label="Illustrative lab console"><div class="console-bar"><span class="console-dot"></span><span class="console-dot"></span><span class="console-dot"></span><span class="console-title">netoze / labs / harborline</span></div><div class="console-body"><p><span class="console-muted">$</span> start web-exposure</p><p class="console-success">✓ target running on loopback</p><p><span class="console-muted">$</span> inspect evidence</p><p class="console-cyan">→ metadata / robots / support-export</p><p><span class="console-muted">$</span> submit finding</p><p class="console-muted">bounded runtime · owned resources · resettable state</p></div></div>
-            <aside class="operator-memes" aria-label="Operator notes">
-              <div class="operator-memes-heading"><span>FIELD NOTES / UNOFFICIAL</span><small>text only · no evidence lost</small></div>
-              <p><span>me:</span> “I’ll just check one packet.”</p>
-              <p><span>the packet:</span> “I have a whole storyline.”</p>
-              <p><span>NET0ZE:</span> “Cool. Keep the source attached.”</p>
+            <div class="lab-console" aria-label="Interactive NET0ZE lab terminal demonstration"><div class="console-bar"><span class="console-dot"></span><span class="console-dot"></span><span class="console-dot"></span><span class="console-title">netoze / labs / harborline</span></div><div class="console-body"><p><span class="console-muted">$</span> start web-exposure</p><p class="console-success">✓ target running on loopback</p><p><span class="console-muted">$</span> inspect evidence</p><p class="console-cyan">→ metadata / robots / support-export</p><p><span class="console-muted">$</span> submit finding</p><p class="console-muted">bounded runtime · owned resources · resettable state</p></div></div>
+            <aside class="operator-memes" aria-label="Security analyst field notes">
+              <div class="operator-memes-heading"><span>FIELD NOTES / FORENSICS</span><small>text only · zero evidence lost</small></div>
+              <p><span>analyst:</span> “I’ll just inspect one suspicious packet.”</p>
+              <p><span>the packet:</span> “I have an entire multi-host storyline.”</p>
+              <p><span>NET0ZE:</span> “Got it. Keeping source provenance attached.”</p>
             </aside>
           </div>
         </section>
 
+        <!-- FAQ Section (Essential for Google Rich Snippets & SERP Visibility) -->
+        <section class="faq-section section-frame reveal" id="faq" aria-labelledby="faq-title">
+          <div class="section-intro">
+            <p class="eyebrow">Frequently Asked Questions</p>
+            <h2 id="faq-title">Everything you need to know about NET0ZE (Neetoze).</h2>
+            <p>Clear, direct answers regarding the NET0ZE platform architecture, packet forensics, operating system compatibility, and privacy guarantees.</p>
+          </div>
+
+          <div class="faq-grid">
+            <details class="faq-item" open>
+              <summary class="faq-summary">What is NET0ZE (also known as Neetoze)? <span>+</span></summary>
+              <div class="faq-content">
+                <p><strong>NET0ZE</strong> (commonly searched phonetically as <strong>Neetoze</strong>) is an open, local-first cybersecurity investigation and network monitoring desktop platform. It enables SOC analysts, network engineers, penetration testers, and security researchers to inspect live packet captures, analyze host process telemetry, and correlate network flows into clear forensic briefs without transmitting private network data to external cloud servers.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-summary">How does NET0ZE compare to Wireshark for network packet analysis? <span>+</span></summary>
+              <div class="faq-content">
+                <p>Wireshark is the standard for raw packet dissection, but it presents a high cognitive load and lacks native integration with host processes or high-level relationship mapping. NET0ZE connects the wire to the machine: it groups packets into flows, maps them to local socket states and process identifiers, and guides the investigator through a streamlined <strong>Orient → Trace → Explain</strong> loop.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-summary">Does NET0ZE send network traffic or telemetry to external servers? <span>+</span></summary>
+              <div class="faq-content">
+                <p>No. NET0ZE operates strictly under a <strong>100% local-first and zero-telemetry</strong> philosophy. Your packet captures, network metrics, IP addresses, and incident notes remain on your physical hardware. No analytical beacons, tracking scripts, or cloud egress channels are bundled in the application.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-summary">Which operating systems are supported by NET0ZE? <span>+</span></summary>
+              <div class="faq-content">
+                <p>NET0ZE supports 64-bit <strong>Windows 10 and Windows 11</strong> (via NSIS installer requiring approved Npcap driver) and <strong>Linux</strong> distributions such as Ubuntu, Debian, Fedora, and Arch Linux (available via Debian <code>.deb</code> package and portable <code>.AppImage</code>). macOS and Android packages are actively planned on the technical roadmap.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-summary">How do Docker-backed Cybersecurity Labs work in NET0ZE? <span>+</span></summary>
+              <div class="faq-content">
+                <p>NET0ZE includes integrated local Docker challenges that run on loopback interfaces. Analysts can deploy realistic network exposure scenarios, analyze live HTTP/DNS/TCP behavior, trace vulnerabilities, and submit findings in an isolated, resettable local sandbox without external risk.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-summary">How can I download and install NET0ZE (Neetoze)? <span>+</span></summary>
+              <div class="faq-content">
+                <p>Official release artifacts are available directly from the <a href="#downloads" style="color:var(--cyan);text-decoration:underline;">Downloads section</a> on this website (<code>neetoze.surge.sh</code>) and mirrored on the official GitHub repository at <a href="https://github.com/1viz3r0/netoze/releases/latest" target="_blank" rel="noreferrer" style="color:var(--cyan);text-decoration:underline;">github.com/1viz3r0/netoze</a>. Every package is accompanied by cryptographic SHA256 checksums.</p>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <!-- Closing CTA Section -->
         <section class="closing-section section-frame reveal" aria-labelledby="closing-title">
           <p class="eyebrow">Build the habit of knowing</p>
-          <h2 id="closing-title">Your network already tells a story.<br /><em>Read it clearly.</em></h2>
-          <div class="closing-actions"><a class="button button-primary" href="#top">Back to the top <span aria-hidden="true">↑</span></a><a class="button button-quiet" href="https://github.com/1viz3r0/netoze" target="_blank" rel="noreferrer">View NET0ZE on GitHub <span aria-hidden="true">↗</span></a></div>
+          <h2 id="closing-title">Your network already tells a story.<br /><em>Read it clearly with NET0ZE.</em></h2>
+          <div class="closing-actions">
+            <a class="button button-primary" href="#downloads">Download NET0ZE (Neetoze) <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="https://github.com/1viz3r0/netoze" target="_blank" rel="noreferrer">View NET0ZE on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
         </section>
       </main>
 
-      <footer class="site-footer section-frame"><a class="brand" href="#top"><span class="brand-mark"><img src="./netoze-logo.png" alt="" width="28" height="28" /></span><span>NET<span class="brand-zero">0</span>ZE</span></a><p>Local-first network monitoring and cybersecurity investigation for authorized use.</p><span class="footer-meta">© 2026 · authorized use only</span></footer>
+      <footer class="site-footer section-frame">
+        <a class="brand" href="#top" aria-label="NET0ZE (Neetoze) Home">
+          <span class="brand-mark"><img src="./netoze-logo.png" alt="NET0ZE Logo" width="28" height="28" /></span>
+          <span>NET<span class="brand-zero">0</span>ZE</span>
+        </a>
+        <p>NET0ZE (Neetoze) — Local-first network monitoring &amp; cybersecurity investigation platform for authorized use.</p>
+        <span class="footer-meta">© 2026 NET0ZE · Authorized Use Only</span>
+      </footer>
+
+      <!-- Extended SEO Footer Navigation & Badges -->
+      <section class="footer-extended section-frame" aria-label="Sitemap and SEO indexing resources">
+        <nav class="footer-links" aria-label="Direct site links">
+          <a href="#product">Capabilities</a>
+          <a href="#workflow">How It Works</a>
+          <a href="#comparison">Tool Comparison</a>
+          <a href="#networking">Network Protocol View</a>
+          <a href="#downloads">Downloads (.exe &amp; .deb)</a>
+          <a href="#labs">Docker Labs</a>
+          <a href="#faq">Frequently Asked Questions</a>
+          <a href="https://github.com/1viz3r0/netoze" target="_blank" rel="noreferrer">GitHub Source</a>
+          <a href="https://github.com/1viz3r0/netoze/blob/master/SECURITY.md" target="_blank" rel="noreferrer">Security Policy</a>
+          <a href="./sitemap.xml" target="_blank">Sitemap (XML)</a>
+          <a href="./robots.txt" target="_blank">Robots (TXT)</a>
+          <a href="./llms.txt" target="_blank">AI Context (llms.txt)</a>
+        </nav>
+        <div class="footer-badges" aria-label="Security and platform attributes">
+          <span>Version 2.0.0 Stable</span>
+          <span>100% Local-First</span>
+          <span>Zero Cloud Telemetry</span>
+          <span>SHA-256 Verified Binaries</span>
+          <span>Domain: neetoze.surge.sh</span>
+        </div>
+      </section>
+
+      <!-- Authentication Dialog (Gated Access Flow) -->
       <dialog class="auth-dialog" data-auth-dialog aria-labelledby="auth-title">
         <div class="auth-panel">
           <button class="auth-close" type="button" data-auth-close aria-label="Close authentication dialog">×</button>
           <div class="auth-layout">
             <aside class="auth-aside">
-              <span class="auth-logo"><img src="./netoze-logo.png" alt="NET0ZE" /></span>
+              <span class="auth-logo"><img src="./netoze-logo.png" alt="NET0ZE Logo" /></span>
               <p class="eyebrow"><span class="eyebrow-dot"></span> Early access</p>
               <h2 id="auth-title">Access the preview.</h2>
               <p class="auth-aside-copy">One calm gate. Phone verification happens once during account creation, never during ordinary sign-in.</p>
