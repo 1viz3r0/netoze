@@ -20,7 +20,6 @@
 - [How NET0ZE Compares to Traditional Tools](#how-net0ze-compares-to-traditional-tools)
 - [Verified Release Artifacts (v2.0.0)](#verified-release-artifacts-v200)
 - [Installation Quickstart](#installation-quickstart)
-- [Platform & Driver Requirements](#platform--driver-requirements)
 - [Source & Security Boundary](#source--security-boundary)
 - [Documentation & Resources](#documentation--resources)
 
@@ -35,14 +34,14 @@ Traditional network analysis forces a compromise:
 **NET0ZE** provides a privacy-first middle ground:
 1. **100% Local-First Architecture:** Packet captures, host socket correlations, and evidence briefs stay strictly on local disk and RAM. Zero analytics, zero cloud egress.
 2. **Orient → Trace → Explain Loop:** A guided investigation workflow that transitions from high-level topology into correlated packet flows, producing structured forensic evidence.
-3. **Integrated Detection Practice:** Embedded Docker CTF challenges with on-demand resets to test detection and triage playbooks locally.
+3. **100% Self-Made Local Engine:** Handcrafted packet analysis and socket tracking with zero third-party dependencies.
 
 ---
 
 ## Core Capabilities
 
 - **Host Process Correlation:** Automatically maps network sockets and wire traffic to local process names and PIDs.
-- **Native Live Packet Capture:** High-performance packet capture powered by libpcap (Linux) and Npcap (Windows).
+- **Native Live Packet Capture:** Custom high-performance local packet capture and socket correlation.
 - **Incident Briefing & Evidence Export:** Generate portable SQLite/JSON evidence bundles with cryptographic timestamps for post-incident review.
 - **Zero Cloud Footprint:** No accounts, no sign-ins, no licensing servers, and nothing installed into OS startup directories.
 
@@ -55,7 +54,7 @@ Traditional network analysis forces a compromise:
 | **Data Privacy** | **100% Local (Zero Egress)** | 100% Local | 100% Local | Cloud Synced / Telemetry |
 | **Host Process Binding** | **Built-in (UI Unified)** | Missing / Disconnected | Requires custom tooling | Agent required |
 | **Learning Curve** | **Low (Guided 3-step loop)** | Steep (Raw frames/hex) | High (CLI / Scripting) | Complex Query DSL |
-| **Built-in Practice Labs** | **Docker CTF Sandboxes** | None | None | Paid add-ons |
+| **Architecture** | **100% Self-Made Local** | Legacy C architecture | Cluster-based daemon | Proprietary cloud agent |
 | **Operating Systems** | **Windows 10/11 & Linux** | Multiplatform | Linux / Unix | Windows / Linux / macOS |
 
 ---
@@ -88,7 +87,6 @@ Current stable release: **v2.0.0** (Published Oct 24, 2026).
 1. Download `NET0ZE_2.0.0_x64-setup.exe` from [GitHub Releases](https://github.com/1viz3r0/netoze/releases/tag/v2.0.0).
 2. Run the installer. It installs for the current user and checks for WebView2 runtime.
 3. Because builds are self-published and unsigned, Windows SmartScreen may present a warning. Click **More info → Run anyway**.
-4. For live wire capture, ensure an approved [Npcap](https://npcap.com/) driver is installed.
 
 ### Linux (Debian, Ubuntu, Fedora, Arch)
 **Via Debian package (`.deb`):**
@@ -105,15 +103,6 @@ netoze
 chmod +x NET0ZE_2.0.0_amd64.AppImage
 ./NET0ZE_2.0.0_amd64.AppImage
 ```
-*(Note: AppImage requires FUSE 2/3 on host system).*
-
----
-
-## Platform & Driver Requirements
-
-- **Linux Live Capture:** Requires the installed package's capture helper and the host's approved `libpcap` capability configuration (`CAP_NET_RAW` / `CAP_NET_ADMIN`). The AppImage is portable and does not install privileged system access.
-- **Windows Live Capture:** Requires an approved Npcap runtime installed separately under your host's local administrative policy. NET0ZE cleanly reports capture as unavailable when Npcap is missing.
-- **CTF Labs Catalog:** Requires a working local Docker daemon. If Docker is unavailable, the labs interface reports `setup-required` instead of simulating activity.
 
 ---
 
