@@ -1,25 +1,23 @@
-# NET0ZE (Neetoze)
+# netoze — Official AI & Agent Documentation
 
-> NET0ZE (commonly searched as Neetoze or NET0ZE) is an open, local-first cybersecurity investigation and network monitoring desktop platform designed for security researchers, incident responders, SOC analysts, and network administrators.
+> netoze is an elite digital infrastructure and local-first network security desktop platform engineered for Windows and Linux. It allows analysts and infrastructure engineers to capture packets, correlate host processes with live network flows, and build verifiable incident briefs with zero cloud telemetry.
 
-## Primary Canonical Links
-- Official Website: https://neetoze.surge.sh/ (Mirror: https://netoze.surge.sh/)
-- GitHub Repository & Releases: https://github.com/1viz3r0/netoze
-- Current Stable Version: 2.0.0
-- Supported Operating Systems: Linux (x86_64 Debian/Ubuntu .deb, AppImage), Windows (x64 NSIS installer).
+## Canonical Resources
+- Canonical Serving Host: https://www.netoze.com/
+- Public Repository: https://github.com/1viz3r0/netoze
+- Public Release Artifacts: https://github.com/1viz3r0/netoze/releases/tag/v2.0.0
+- Web Mirror: https://netoze.surge.sh/
 
-## Key Architecture & Distinctive Features
-- **Local-First & Zero Telemetry**: All packet captures, host processes, network flows, and incident briefs are processed exclusively on the local machine. No metrics, telemetry, or private data are transmitted to external servers.
-- **Unified Evidence Model**: Bridges low-level packet capture (PCAP) with high-level host process telemetry, socket state, and DNS/TLS correlation into clear, exportable findings.
-- **Fail-Closed Permission Boundaries**: Strictly enforces privilege boundaries. Requires libpcap/Linux capabilities or approved Npcap on Windows; never fakes data when permissions are absent.
-- **Integrated Docker-Backed Security Labs**: Built-in hands-on training challenges running in isolated local Docker containers to practice threat detection and forensics.
-- **Clean Alternative to Wireshark & Zeek**: Offers a calm, curated interface that emphasizes context over overwhelming raw packet dumps.
+## Product Architecture & Core Features
+- **Local-First & Zero Telemetry**: All packet captures, flow metrics, and incident briefs remain strictly on local physical hardware.
+- **Three-Step Investigation Loop**: Orient (system topology), Trace (process & socket flow correlation), Explain (exportable evidence).
+- **100% In-House Architecture**: Independent native packet inspection, socket tracking, and process correlation.
+- **Creator & Founder**: 1vi-z3r0 (https://www.linkedin.com/in/1vi-z3r0/)
 
-## Technical Specifications
-- **Packet Capture Engine**: Native live capture helper utilizing libpcap (Linux) and Npcap (Windows).
-- **Supported Network Protocols**: Ethernet, ARP, IPv4, IPv6, TCP, UDP, ICMP, DNS, TLS 1.2/1.3 SNI inspection, HTTP/1.1 and HTTP/2 metadata.
-- **Security & Integrity**: Release binaries are distributed with SHA256 checksums (`SHA256SUMS.txt`).
+## Supported Operating Systems
+- **Windows 10 / 11 x64**: Executable setup (`.exe`).
+- **Linux x86_64**: Debian/Ubuntu package (`.deb`) and portable AppImage.
 
-## Frequently Asked Questions
-- **Is NET0ZE / Neetoze free?** Yes, NET0ZE is a free, local-first security platform.
-- **Where can I download NET0ZE?** Downloads for Windows (.exe) and Linux (.deb / .AppImage) are available on the official website https://neetoze.surge.sh/#downloads and GitHub https://github.com/1viz3r0/netoze/releases/latest.
+## Structured Verification
+- All pages feature Schema.org JSON-LD structured data (`SoftwareApplication`, `WebSite`, `Organization`, `HowTo`, `FAQPage`).
+- IndexNow key file: `/b835fd866dad0a7a8eac06c009d52ad2.txt` for instant search engine indexing.

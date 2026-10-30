@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>netoze Releases &amp; Security Updates</title>
+    <link>https://www.netoze.com/</link>
+    <description>Official release announcements, digital infrastructure updates, and secure packet analysis briefs for netoze.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 31 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://www.netoze.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>netoze 2.0.0 Released: Elite Digital Infrastructure &amp; Local Network Monitoring</title>
+      <link>https://www.netoze.com/downloads.html</link>
+      <guid isPermaLink="true">https://github.com/1viz3r0/netoze/releases/tag/v2.0.0</guid>
+      <pubDate>Sat, 24 Oct 2026 12:00:00 GMT</pubDate>
+      <description>Initial stable desktop release of netoze 2.0.0 for Windows 10/11 and Linux x86_64. Features native packet capture, host process-to-socket correlation, and zero-telemetry local storage.</description>
+    </item>
+  </channel>
+</rss>

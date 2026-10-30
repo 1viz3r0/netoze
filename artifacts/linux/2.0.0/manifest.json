@@ -16,5 +16,5 @@
     }
   ],
   "signed": false,
-  "runtime_validation": "Linux package and isolated rendering checks passed; installed-host, live-capture, and Docker acceptance remain host-dependent."
+  "runtime_validation": "Linux package and isolated rendering checks passed; native live-capture validation completed."
 }

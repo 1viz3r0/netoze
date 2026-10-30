@@ -1,13 +1,13 @@
 {
-  "name": "NET0ZE (Neetoze) — Local-First Cybersecurity Investigation",
-  "short_name": "Neetoze",
-  "description": "Local-first network monitoring, packet capture, host telemetry, and evidence-led cybersecurity investigation.",
+  "name": "netoze — Elite Digital Infrastructure & Secure Solutions",
+  "short_name": "netoze",
+  "description": "Elite digital infrastructure, network monitoring, packet capture, and local-first security architecture.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "orientation": "any",
-  "background_color": "#0b0d0e",
-  "theme_color": "#0b0d0e",
+  "background_color": "#050505",
+  "theme_color": "#050505",
   "icons": [
     {
       "src": "./netoze-logo.png",

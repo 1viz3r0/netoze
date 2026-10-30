@@ -1,87 +1,25 @@
-# NET0ZE landing page
+# netoze website
 
-This is a standalone, static marketing landing page for NET0ZE. It lives outside
-the desktop app entrypoint so the current investigation UI and the active
-working-tree changes remain untouched.
+This is the static marketing and documentation portal for netoze — plain HTML, CSS, and JavaScript.
 
-## Preview locally
+**Official URL: `https://www.netoze.com/`**
+- Primary Release Repository: `https://github.com/1viz3r0/netoze`
+- Web Mirror: `https://netoze.surge.sh/`
+- Founder & Architecture Lead: 1vi-z3r0 (https://www.linkedin.com/in/1vi-z3r0/)
 
-From the repository root:
+## Pages
 
-```bash
-python3 -m http.server 4173 --directory landing-page
-```
+| File | Purpose |
+| --- | --- |
+| `index.html` | Home: elite digital infrastructure & secure solutions, hero globe, architectural comparison, camouflaged founder section, and FAQ |
+| `how-it-works.html` | Platform workflow: Orient, Trace, Explain |
+| `compatibilities.html` | Operating system compatibility: Windows 10/11 x64, Linux .deb and .AppImage |
+| `downloads.html` | Official release downloads: netoze 2.0.0 artifacts and cryptographic checksums |
+| `about.html` | Founder and architectural facts policy |
+| `404.html` | Semantic not-found page |
 
-Then open <http://localhost:4173>.
-
-The page uses the checked-in NET0ZE logo from `public/netoze-mark.svg` (the
-landing page keeps the same SVG inline so it also works when deployed as a
-standalone folder) and has no new runtime dependencies.
-
-The hero globe uses the bundled Natural Earth-derived data already shipped with
-NET0ZE. `data/countries.json` provides country geometry and `data/admin1/`
-provides detailed state/region boundaries for the available countries. The
-globe intentionally renders as a minimal dark map: no city names, labels,
-markers, HUD text, search controls, or decorative dots surround it. The Labs
-panel also includes a small text-only operator-notes joke block; it is
-intentionally separate from the product, SEO, and download copy.
-
-The globe stage scales from small mobile screens through wide desktop displays
-with responsive CSS sizing, a capped high-DPI canvas buffer, and a
-`ResizeObserver` fallback to the window resize event. Its dark background is
-owned by the stage, so the map remains readable without depending on a fixed
-viewport size.
-
-Download links intentionally reflect the current project support matrix. While
-the public installers are paused, ready download controls require both email
-and phone verification and download a browser-generated `ThankYou.txt` blob
-instead of opening a release asset. There is no public static ThankYou file to
-download directly and bypass the gate.
-
-- Windows x64: direct latest `.exe` installer link.
-- Linux x86_64: direct latest `.deb` link plus the GitHub releases page for the
-  portable AppImage.
-- macOS and Android: clearly marked as not released instead of linking to a
-  nonexistent package.
-
-## Authentication and privacy
-
-The landing page is static and uses Supabase Auth only through its public
-browser key. The page does not contain a service key, analytics, or a custom
-tracking database. The flow is:
-
-1. Create an account with email, password, and an E.164 phone number.
-2. Verify the phone once with the signup SMS code.
-3. Confirm the email link sent by Supabase.
-4. Sign in normally; no phone code is requested during sign-in.
-5. Download the temporary `ThankYou.txt` file.
-
-Configure these Netlify environment variables before deploying:
-
-```text
-NETOZE_SUPABASE_URL
-NETOZE_SUPABASE_PUBLISHABLE_KEY
-```
-
-The Netlify build command writes the browser-safe configuration to
-`landing-page/auth-config.js`. Never use a Supabase `service_role` or `sb_secret`
-key in these variables.
-
-In Supabase Auth settings, enable email confirmations, enable phone
-authentication, configure an SMS provider, and add the Netlify production URL
-and local preview URL to the allowed redirect URLs. Add CAPTCHA and sensible
-SMS rate limits before public launch; phone verification sends real messages
-and may incur provider costs.
-
-## Netlify deployment
-
-The repository root contains `netlify.toml`, which publishes only
-`landing-page/` and runs `scripts/build-landing-page.mjs`. In Netlify, import the
-public `1viz3r0/netoze` repository, not the private source repository, then add
-the two environment variables above and attach the custom domain under Domain
-management. Keep all public GitHub links pointed at `1viz3r0/netoze`.
-
-The visual language is intentionally technical and evidence-first: dark
-instrument-panel surfaces, layered 3D perspective, cyan/lime state accents,
-restrained motion, explicit source labels, SEO-oriented copy, and no invented
-telemetry.
+## Shared assets
+- `styles.css` — design tokens and camouflaged creator modular isolation.
+- `theme.js` — zero-flash theme persistence.
+- `script.js` — canvas globe and interactive behaviors.
+- `sitemap.xml` & `robots.txt` — zero-bloat SEO configuration for Google, Bing, and DuckDuckGo.

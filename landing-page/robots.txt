@@ -1,52 +1,40 @@
-# robots.txt for neetoze.surge.sh
-# NET0ZE (Neetoze) — Local-First Cybersecurity Investigation Platform
-# Full crawler indexation enabled for top SERP ranking
-
+# netoze — https://www.netoze.com/
 User-agent: *
 Allow: /
 
-# Standard Search Crawlers
+# Search Engine Crawlers
 User-agent: Googlebot
 Allow: /
 
 User-agent: Googlebot-Image
 Allow: /
 
-User-agent: Googlebot-Mobile
-Allow: /
-
 User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
 Allow: /
 
 User-agent: DuckDuckBot
 Allow: /
 
-User-agent: Baiduspider
+User-agent: YandexBot
 Allow: /
 
-User-agent: YandexBot
+User-agent: Slurp
+Allow: /
+
+User-agent: Baiduspider
 Allow: /
 
 User-agent: Applebot
 Allow: /
 
-User-agent: Sogou
-Allow: /
-
-User-agent: Exabot
-Allow: /
-
-# AI Search & LLM Crawlers
-User-agent: ChatGPT-User
-Allow: /
-
+# AI Answer Engines & LLM Agents
 User-agent: GPTBot
 Allow: /
 
-User-agent: PerplexityBot
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
 Allow: /
 
 User-agent: ClaudeBot
@@ -55,7 +43,13 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
+User-agent: PerplexityBot
+Allow: /
+
 User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
 Allow: /
 
 User-agent: Bytespider
@@ -64,8 +58,5 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-User-agent: cohere-ai
-Allow: /
-
-Sitemap: https://neetoze.surge.sh/sitemap.xml
-Host: neetoze.surge.sh
+Sitemap: https://www.netoze.com/sitemap.xml
+Host: https://www.netoze.com/

@@ -3,61 +3,53 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://neetoze.surge.sh/</loc>
-    <lastmod>2026-10-31T02:50:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.netoze.com/</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://neetoze.surge.sh/og-image.png</image:loc>
-      <image:title>NET0ZE (Neetoze) — Local-First Cybersecurity Investigation Platform</image:title>
-      <image:caption>Evidence-first network monitoring, packet capture, host telemetry, and incident analysis.</image:caption>
+      <image:loc>https://www.netoze.com/og-image.png</image:loc>
+      <image:title>netoze — Elite Digital Infrastructure &amp; Secure Solutions</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://neetoze.surge.sh/netoze-logo.png</image:loc>
-      <image:title>NET0ZE (Neetoze) Security Application Logo</image:title>
-      <image:caption>Official logo of NET0ZE (Neetoze) Cybersecurity Desktop Platform.</image:caption>
+      <image:loc>https://www.netoze.com/netoze-icon.png</image:loc>
+      <image:title>netoze Official Icon</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://neetoze.surge.sh/#product</loc>
-    <lastmod>2026-10-31T02:50:00+00:00</lastmod>
+    <loc>https://www.netoze.com/downloads.html</loc>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://neetoze.surge.sh/#comparison</loc>
-    <lastmod>2026-10-31T02:50:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://www.netoze.com/how-it-works.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://neetoze.surge.sh/#networking</loc>
-    <lastmod>2026-10-31T02:50:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://www.netoze.com/compatibilities.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://neetoze.surge.sh/#workflow</loc>
-    <lastmod>2026-10-31T02:50:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://www.netoze.com/about.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://neetoze.surge.sh/#downloads</loc>
-    <lastmod>2026-10-31T02:50:00+00:00</lastmod>
+    <loc>https://www.netoze.com/feed.xml</loc>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://neetoze.surge.sh/#labs</loc>
-    <lastmod>2026-10-31T02:50:00+00:00</lastmod>
+    <loc>https://www.netoze.com/llms.txt</loc>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://neetoze.surge.sh/#faq</loc>
-    <lastmod>2026-10-31T02:50:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.5</priority>
   </url>
 </urlset>
