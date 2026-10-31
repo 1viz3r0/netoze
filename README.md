@@ -1,23 +1,23 @@
-# netoze — Elite Digital Infrastructure & Secure Solutions
+# NET0ZE (Neetoze) — Local-First Desktop Network Monitoring & Cybersecurity Investigation Platform
 
 [![Release](https://img.shields.io/badge/release-v2.0.0-blue.svg)](https://github.com/1viz3r0/netoze/releases/tag/v2.0.0)
-[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11%20%7C%20Linux%20x86__64-brightgreen.svg)](https://www.netoze.com/compatibilities.html)
-[![Telemetry](https://img.shields.io/badge/telemetry-0%25%20(Local%20First)-success.svg)](https://www.netoze.com/about.html)
+[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11%20%7C%20Linux%20x86__64-brightgreen.svg)](https://1viz3r0.github.io/netoze-site/compatibilities.html)
+[![Telemetry](https://img.shields.io/badge/telemetry-0%25%20(Local%20First)-success.svg)](https://1viz3r0.github.io/netoze-site/about.html)
 [![License](https://img.shields.io/badge/license-Authorized%20Local%20Use-lightgrey.svg)](SECURITY.md)
-[![RSS Feed](https://img.shields.io/badge/feed-RSS%202.0-orange.svg)](https://www.netoze.com/feed.xml)
+[![RSS Feed](https://img.shields.io/badge/feed-RSS%202.0-orange.svg)](https://1viz3r0.github.io/netoze-site/feed.xml)
 
-**netoze** is an elite digital infrastructure and local-first network security desktop platform engineered for Windows 10/11 and Linux. Built for security researchers, infrastructure architects, SOC analysts, and network engineers, netoze provides deterministic network monitoring, packet capture, and native host socket telemetry with zero cloud egress.
+**NET0ZE** (frequently referred to phonetically as **Neetoze**) is a desktop network analysis and cybersecurity investigation application for Windows 10/11 and Linux. Built for security researchers, network engineers, SOC analysts, and students, NET0ZE bridges the gap between raw wire packet inspection and local host telemetry without sending sensitive data to external cloud servers.
 
-🌐 **Official Website:** [https://www.netoze.com/](https://www.netoze.com/)  
-📦 **Release Downloads:** [v2.0.0 Release Assets](https://github.com/1viz3r0/netoze/releases/tag/v2.0.0) · [Downloads & Checksums](https://www.netoze.com/downloads.html)  
-👤 **Founder & Architecture Lead:** [1vi-z3r0](https://www.linkedin.com/in/1vi-z3r0/)
+🌐 **Official Website:** [1viz3r0.github.io/netoze-site](https://1viz3r0.github.io/netoze-site/)  
+🚀 **Alternative Web Mirrors:** [neetoze.surge.sh](https://neetoze.surge.sh/) · [netoze.surge.sh](https://netoze.surge.sh/)  
+📦 **Release Downloads:** [v2.0.0 Release Assets](https://github.com/1viz3r0/netoze/releases/tag/v2.0.0) · [Downloads & Checksums](https://1viz3r0.github.io/netoze-site/downloads.html)
 
 ---
 
 ## Table of Contents
-- [Why netoze?](#why-netoze)
+- [Why NET0ZE?](#why-net0ze)
 - [Core Capabilities](#core-capabilities)
-- [Architectural Superiority](#architectural-superiority)
+- [How NET0ZE Compares to Traditional Tools](#how-net0ze-compares-to-traditional-tools)
 - [Verified Release Artifacts (v2.0.0)](#verified-release-artifacts-v200)
 - [Installation Quickstart](#installation-quickstart)
 - [Source & Security Boundary](#source--security-boundary)
@@ -25,36 +25,36 @@
 
 ---
 
-## Why netoze?
+## Why NET0ZE?
 
-Traditional network analysis imposes severe friction:
-- **Legacy Disconnected Inspectors:** Exhibit bit-level byte dumps, but remain completely blind to operating system process lifecycles.
-- **Invasive Cloud SIEM Platforms:** Require intrusive background daemons, continuous proprietary metadata upload to external servers, and high costs.
+Traditional network analysis forces a compromise:
+- **Raw Packet Analyzers (e.g., Wireshark):** Unmatched at bit-level byte inspection, but completely isolated from operating system processes. You see packets, but cannot natively tell which process or PID initiated the flow.
+- **Enterprise SIEM / EDR Clouds:** Require invasive corporate agents, continuous telemetry upload to third-party cloud servers, and expensive subscription models.
 
-**netoze** introduces high-speed proprietary digital infrastructure:
-1. **100% Local-First Architecture:** Packet captures, host socket bindings, and incident forensics remain strictly on local disk and physical RAM.
-2. **Orient → Trace → Explain Loop:** A streamlined investigation methodology transitioning from system topology to correlated socket flows.
-3. **100% In-House Proprietary Engine:** Built from scratch with native packet processing and socket correlation algorithms.
+**NET0ZE** provides a privacy-first middle ground:
+1. **100% Local-First Architecture:** Packet captures, host socket correlations, and evidence briefs stay strictly on local disk and RAM. Zero analytics, zero cloud egress.
+2. **Orient → Trace → Explain Loop:** A guided investigation workflow that transitions from high-level topology into correlated packet flows, producing structured forensic evidence.
+3. **100% Self-Made Local Engine:** Handcrafted packet analysis and socket tracking with zero third-party dependencies.
 
 ---
 
 ## Core Capabilities
 
-- **Native Host Process Binding:** Directly maps incoming wire frames and sockets to local process names and PIDs.
-- **Deterministic Packet Capture:** Microsecond-precise interface capture with zero background overhead.
-- **Incident Briefing & Evidence Export:** Generate portable evidence bundles with cryptographic timestamps.
-- **Zero Cloud Footprint:** No accounts, no sign-ins, and zero background services.
+- **Host Process Correlation:** Automatically maps network sockets and wire traffic to local process names and PIDs.
+- **Native Live Packet Capture:** Custom high-performance local packet capture and socket correlation.
+- **Incident Briefing & Evidence Export:** Generate portable SQLite/JSON evidence bundles with cryptographic timestamps for post-incident review.
+- **Zero Cloud Footprint:** No accounts, no sign-ins, no licensing servers, and nothing installed into OS startup directories.
 
 ---
 
-## Architectural Superiority
+## How NET0ZE Compares to Traditional Tools
 
-| Feature | netoze Core Architecture | Legacy Byte Inspectors | Distributed Script Daemons | Cloud SIEM Monitoring |
+| Feature | NET0ZE (Neetoze) | Wireshark | Zeek / Bro | SaaS Network Monitoring |
 |---|---|---|---|---|
 | **Data Privacy** | **100% Local (Zero Egress)** | 100% Local | 100% Local | Cloud Synced / Telemetry |
 | **Host Process Binding** | **Built-in (UI Unified)** | Missing / Disconnected | Requires custom tooling | Agent required |
 | **Learning Curve** | **Low (Guided 3-step loop)** | Steep (Raw frames/hex) | High (CLI / Scripting) | Complex Query DSL |
-| **Architecture** | **100% In-House Engine** | Legacy monolithic codebase | Cluster-based daemon | Proprietary cloud agent |
+| **Architecture** | **100% Self-Made Local** | Legacy C architecture | Cluster-based daemon | Proprietary cloud agent |
 | **Operating Systems** | **Windows 10/11 & Linux** | Multiplatform | Linux / Unix | Windows / Linux / macOS |
 
 ---
@@ -69,22 +69,32 @@ Current stable release: **v2.0.0** (Published Oct 24, 2026).
 | **Linux x64** | Debian (.deb) | `artifacts/linux/2.0.0/NET0ZE_2.0.0_amd64.deb` | `a3fb522ca687e1f4e150937a898b58a1c97a2cbaf58a1a2bb2436d4df61b4a92` |
 | **Linux x64** | AppImage | `artifacts/linux/2.0.0/NET0ZE_2.0.0_amd64.AppImage` | `c51d977c769d7b884468af40bfb618f5a907d24a7c72c2e1f277bd3b6299c924` |
 
+> [!TIP]
+> Always verify cryptographic integrity before executing downloaded packages:
+> ```bash
+> # Linux verification
+> sha256sum -c SHA256SUMS-linux.txt
+> 
+> # Windows PowerShell verification
+> Get-FileHash .\NET0ZE_2.0.0_x64-setup.exe -Algorithm SHA256
+> ```
+
 ---
 
 ## Installation Quickstart
 
 ### Windows (10 / 11 64-bit)
 1. Download `NET0ZE_2.0.0_x64-setup.exe` from [GitHub Releases](https://github.com/1viz3r0/netoze/releases/tag/v2.0.0).
-2. Run the installer for the current workstation user.
-3. If Windows SmartScreen prompts on unsigned build, select **More info → Run anyway**.
+2. Run the installer. It installs for the current user and checks for WebView2 runtime.
+3. Because builds are self-published and unsigned, Windows SmartScreen may present a warning. Click **More info → Run anyway**.
 
 ### Linux (Debian, Ubuntu, Fedora, Arch)
 **Via Debian package (`.deb`):**
 ```bash
-# Verify checksum and install
+# Download and install DEB package
 sudo apt install ./NET0ZE_2.0.0_amd64.deb
 
-# Launch netoze
+# Launch NET0ZE
 netoze
 ```
 
@@ -107,14 +117,14 @@ This repository is the official release mirror and user documentation portal. To
 
 ## Documentation & Resources
 
-- **Official Website:** [https://www.netoze.com/](https://www.netoze.com/)
-- **How It Works:** [https://www.netoze.com/how-it-works.html](https://www.netoze.com/how-it-works.html)
-- **Compatibility Matrix:** [https://www.netoze.com/compatibilities.html](https://www.netoze.com/compatibilities.html)
-- **Verified Downloads:** [https://www.netoze.com/downloads.html](https://www.netoze.com/downloads.html)
-- **About & Facts Policy:** [https://www.netoze.com/about.html](https://www.netoze.com/about.html)
-- **RSS Updates Feed:** [https://www.netoze.com/feed.xml](https://www.netoze.com/feed.xml)
-- **LLM/AI System Index:** [https://www.netoze.com/llms.txt](https://www.netoze.com/llms.txt)
+- **Official Website:** [https://1viz3r0.github.io/netoze-site/](https://1viz3r0.github.io/netoze-site/)
+- **How It Works:** [https://1viz3r0.github.io/netoze-site/how-it-works.html](https://1viz3r0.github.io/netoze-site/how-it-works.html)
+- **Compatibility Matrix:** [https://1viz3r0.github.io/netoze-site/compatibilities.html](https://1viz3r0.github.io/netoze-site/compatibilities.html)
+- **Verified Downloads:** [https://1viz3r0.github.io/netoze-site/downloads.html](https://1viz3r0.github.io/netoze-site/downloads.html)
+- **About & Facts Policy:** [https://1viz3r0.github.io/netoze-site/about.html](https://1viz3r0.github.io/netoze-site/about.html)
+- **RSS Updates Feed:** [https://1viz3r0.github.io/netoze-site/feed.xml](https://1viz3r0.github.io/netoze-site/feed.xml)
+- **LLM/AI System Index:** [https://1viz3r0.github.io/netoze-site/llms.txt](https://1viz3r0.github.io/netoze-site/llms.txt)
 
 ---
 
-© 2026 netoze · Founder: [1vi-z3r0](https://www.linkedin.com/in/1vi-z3r0/) · Authorized Local Use Only
+© 2026 NET0ZE (Neetoze) · Maintained by [1viz3r0](https://github.com/1viz3r0) · Authorized Local Use Only
